@@ -1,0 +1,143 @@
+/* step two, set up up global CSS variables */
+@import url("https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to left,
+    rgb(188, 183, 133),
+    rgb(155, 137, 166),
+    rgb(195, 119, 123),
+    rgb(133, 174, 148),
+    rgb(163, 141, 141)
+  );
+}
+
+:root {
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-border: #ffffff34;
+  --font-staat: "Staatliches", cursive;
+  --font-os: "Oswald", sans-serif;
+  --font-ram: "Rambla", sans-serif;
+}
+
+/* global classes */
+.font-staat {
+  font: normal 400 18px var(--font-staat);
+}
+.font-os {
+  font: normal 300 18px var(--font-os);
+}
+.font-ram {
+  font: normal bold 18px var(--font-ram);
+}
+
+.font-size-40 {
+  font-size: 50px;
+}
+.font-size-34 {
+  font-size: 34px;
+}
+.font-size-27 {
+  font-size: 27px;
+}
+.font-size-20 {
+  font-size: 20px;
+}
+.font-size-16 {
+  font-size: 16px;
+}
+
+/* #global classes */
+/* step four, add header CSS */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  transition: left 0.5s ease;
+}
+
+#header nav {
+  height: 100vh;
+}
+#header .site-title .navbar-brand {
+  letter-spacing: 2px;
+  color: var(--color-secondary);
+}
+
+#header .nav-link {
+  margin: 0.7rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  opacity: 0.9999;
+  text-transform: uppercase;
+}
+
+#header .nav-link:hover {
+  color: var(--color-secondary) !important;
+}
+
+#header .toggle-button {
+  background: none;
+  color: var(--color-primary);
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  border: 1px solid var(--color-border);
+}
+
+.toggle-left {
+  left: 0 !important;
+  width: 1000px !important;
+}
+
+/* site-main */
+
+.site-banner .banner-area {
+  /* background-image:linear-gradient(to left, rgb(196, 119, 119), blue, rgb(196, 104, 196), rgb(120, 171, 120), rgb(179, 122, 179), orange); */
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.site-banner .banner-area .author {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: center;
+}
+
+.site-banner .banner-area .author .author-img {
+  width: 230px;
+  height: 320px;
+  border-radius: 50%;
+  margin: auto;
+  background: url(./Aaditya.png);
+  background-size: 200%;
+  background-position: 40% 0;
+}
+
+@media screen and (min-width: 768px) {
+  .toggle-button {
+    display: none;
+  }
+  #header {
+    z-index: 0;
+  }
+}
+
+/* #site-main */
+/* social media icons */
+.social-icons {
+  background-color: #ede1e1;
+  width: 100%;
+}
+.social-icon {
+  margin: 20px;
+}
