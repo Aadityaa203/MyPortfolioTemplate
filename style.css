@@ -1,9 +1,11 @@
 /* step two, set up up global CSS variables */
 @import url("https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap");
+@import url("https://www.fontspace.com/goldrops-font-f91751");
 
 body {
   margin: 0;
   padding: 0;
+  /* background-image: url(./images/bgimage.avif); */
   background-image: linear-gradient(
     to left,
     rgb(188, 183, 133),
@@ -22,7 +24,9 @@ body {
   --font-os: "Oswald", sans-serif;
   --font-ram: "Rambla", sans-serif;
 }
-
+hr {
+  margin: 20px;
+}
 /* global classes */
 .font-staat {
   font: normal 400 18px var(--font-staat);
@@ -97,30 +101,33 @@ body {
 /* site-main */
 
 .site-banner .banner-area {
-  /* background-image:linear-gradient(to left, rgb(196, 119, 119), blue, rgb(196, 104, 196), rgb(120, 171, 120), rgb(179, 122, 179), orange); */
+  /* background-image:linear-gradient(to left, rgb(196, 119, 119), blue, rgb(196, 104, 196), rgb(120, 171, 120), rgb(179, 122, 179), orange);  */
   background-size: cover;
   width: 100%;
   height: 100vh;
   position: relative;
 }
+.tools {
+  font-size: 2rem;
+}
 
-.site-banner .banner-area .author {
+/* .site-banner .banner-area .author {
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: center;
-}
+} */
 
-.site-banner .banner-area .author .author-img {
-  width: 230px;
+.author .author-img {
+  width: 240px;
   height: 320px;
   border-radius: 50%;
   margin: auto;
-  background: url(./Aaditya.png);
-  background-size: 200%;
-  background-position: 40% 0;
+  background: url(./images/Aaditya1.png);
+  background-size: 170%;
+  background-position: 45% 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -132,12 +139,67 @@ body {
   }
 }
 
-/* #site-main */
+/* @media screen and (min-width: 350px) {
+  .col-sm-6 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .languageList {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .m-5 {
+    margin: 0;
+  }
+  .p-3 {
+    padding: 0;
+  }
+} */
+
 /* social media icons */
 .social-icons {
-  background-color: #ede1e1;
+  background-color: #131313;
   width: 100%;
+  height: 40px;
+  padding: 10px;
 }
 .social-icon {
   margin: 20px;
+  opacity: 0.99;
+}
+.bottom {
+  height: 60px;
+  padding: 20px;
+}
+div.author.text-center {
+  width: 80%;
+}
+ul.list-inline {
+  font-size: 3rem;
+  opacity: 0.6;
+}
+.col-sm-6 {
+  text-align: left;
+  margin: 5px;
+}
+
+.languageList {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.text-bold {
+  text-decoration: underline;
+}
+.pt-5 {
+  margin-top: 0;
+}
+.mt-5 {
+  margin-top: 0;
+}
+.col {
+  padding: 0;
 }
