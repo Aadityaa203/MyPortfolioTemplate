@@ -14,6 +14,7 @@ body {
     rgb(133, 174, 148),
     rgb(163, 141, 141)
   );
+  /* background-image: url(./images/bgimage.avif); */
 }
 
 :root {
@@ -207,4 +208,7 @@ ul.list-inline {
 }
 .col {
   padding: 0;
+}
+.author{
+  margin-top: 40px;
 }
