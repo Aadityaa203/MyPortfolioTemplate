@@ -209,6 +209,11 @@ ul.list-inline {
 .col {
   padding: 0;
 }
-.author{
+.author {
   margin-top: 40px;
+}
+.col-md-8 {
+  height: 100%;
+  width: 100%;
+  padding: 35px;
 }
