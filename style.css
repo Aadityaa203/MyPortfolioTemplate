@@ -217,3 +217,16 @@ ul.list-inline {
   width: 100%;
   padding: 35px;
 }
+
+/* JavaScript CIW certificate image */
+#showContent {
+  background-color: #34ce2e;
+  font-size: 24px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 9px;
+}
+img.skills-image {
+  height: 600px;
+  width: 80%;
+}
