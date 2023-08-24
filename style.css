@@ -220,7 +220,7 @@ ul.list-inline {
 
 /* JavaScript CIW certificate image */
 #showContent {
-  background-color: #34ce2e;
+  background-color: #79a078;
   font-size: 24px;
   padding: 15px;
   margin: 15px;
@@ -230,3 +230,39 @@ img.skills-image {
   height: 600px;
   width: 80%;
 }
+
+/* skills computer courses */
+.centered-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+}
+
+.centered-list li {
+  list-style-position: inside;
+  text-align: center;
+  width: 100%; /* Make each list item take up full width */
+  padding-left: 20px; /* Adjust this value to control the indent */
+  box-sizing: border-box; /* Include padding in total width */
+}
+
+/* contact me,  form */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input,
+textarea {
+  width: 60%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+/* button {
+  
+  padding: 11px 25px;
+  background-color: rgb(86, 126, 146);
+  color: #fff;
+  border: 6px solid black;
+  cursor: pointer;
+} */
