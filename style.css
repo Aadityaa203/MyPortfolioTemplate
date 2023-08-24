@@ -220,7 +220,7 @@ ul.list-inline {
 
 /* JavaScript CIW certificate image */
 #showContent {
-  background-color: #79a078;
+  background-color: #0fe90c;
   font-size: 24px;
   padding: 15px;
   margin: 15px;
@@ -229,6 +229,21 @@ ul.list-inline {
 img.skills-image {
   height: 600px;
   width: 80%;
+}
+@keyframes flash1 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flashing1 {
+  animation: flash1 1s infinite; /* Adjust the duration as needed */
 }
 
 /* skills computer courses */
@@ -258,11 +273,19 @@ textarea {
   padding: 5px;
   margin-bottom: 10px;
 }
-/* button {
-  
-  padding: 11px 25px;
-  background-color: rgb(86, 126, 146);
-  color: #fff;
-  border: 6px solid black;
-  cursor: pointer;
-} */
+/* Skills flashing using CSS */
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    background-color: aqua;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.flashing {
+  animation: flash 2s infinite; /* Adjust the duration as needed */
+}

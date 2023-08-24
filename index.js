@@ -26,7 +26,6 @@ function toggle_onclick($win, $navbar, width) {
 // Skills (certifications)
 const showButton = document.getElementById("showContent");
 const hiddenContent = document.getElementById("hiddenContent");
-
 showButton.addEventListener("click", function () {
   if (hiddenContent.style.display === "none") {
     hiddenContent.style.display = "block";
@@ -38,19 +37,18 @@ showButton.addEventListener("click", function () {
 });
 
 // contact me (form)
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the form from submitting normally
-
-  // Get form values
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const subject = document.getElementById('subject').value;
-  const message = document.getElementById('message').value;
-
-  // Display an alert with the form data
-  const formData = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
-  alert(formData);
-
-  // Reset the form
-  this.reset();
-});
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    // Get form values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+    // Display an alert with the form data
+    const formData = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+    alert(formData);
+    // Reset the form
+    this.reset();
+  });
